@@ -1,0 +1,38 @@
+html 
+    box-sizing: border-box
+    
+    *, *:before, *:after 
+        box-sizing: inherit
+
+.main-page
+    background: #fff
+    margin: 0
+    padding: 0
+    height: 1200px
+    font-family: 'Open Sans', sans-serif
+
+  
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) 
+     html
+        font-size: 0.6rem
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) 
+     html
+        font-size: 0.65rem
+
+// Средние девайсы («таблетки», >= 768px) 
+@media (min-width: 768px) and (max-width: 991.98px) 
+     html
+        font-size: 0.8rem
+
+// Большие девайсы (большие десктопы, >= 992px)
+@media (min-width: 992px) and (max-width: 1199.98px) 
+     html
+        font-size: 1rem
+
+// Большие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) 
+     html
+        font-size: 1.2rem

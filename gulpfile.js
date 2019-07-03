@@ -47,7 +47,6 @@ gulp.task('move-fonts', () => {
         .pipe(gulp.dest('./dist/fonts'));
   });
 
-   
 gulp.task('imagemin', () =>
   gulp.src('./src/img/**/*')
       .pipe(imagemin())
@@ -61,47 +60,9 @@ gulp.task('dist', gulp.parallel('minify-css', 'minify-js', 'minify-html', 'move-
 gulp.task('clean', () => {
     return del.sync('dist');
 });
-
  
 gulp.task('gcmq', function () {
     gulp.src('./src/style.css')
         .pipe(gcmq())
         .pipe(gulp.dest('dist'));
 });
-
-// gulp.task('min-js', function() {
-
-//     return gulp.src("src/js/*.js")
-//     .pipe(rename({suffix: ".min"}))
-//     .pipe(uglify())
-//     .pipe(gulp.dest("build/js"));
-    
-// });
-
-// gulp.task('min', gulp.series('min-css', 'min-js'));
-
-
-// //clean для очистки каталога /dist/ перед сборкой
-
-
-
-// gulp.task('watch', function () {
-//     gulp.watch('src/css/**/*.css', gulp.series('min'));
-// });
-
-// gulp.task('build', ['clean', 'min-css', 'min-js'], function() {
-//     var buildCss = gulp.src([
-//       'src/css/libs.min.css',
-//       'src/css/main.css'
-//     ])
-//     .pipe(gulp.dest('dist/css'));
-  
-//     var buildFonts = gulp.src('src/fonts/**/*')
-//     .pipe(gulp.dest('dist/fonts'));
-  
-//     var buildJs = gulp.src('src/js/**/*')
-//     .pipe(gulp.dest('dist/js'));
-  
-//     var buildHtml = gulp.src('src/*.html')
-//     .pipe(gulp.dest('dist'));
-//   });

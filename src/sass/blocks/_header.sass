@@ -1,0 +1,142 @@
+.header
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/header/header-bg.jpg) no-repeat
+    min-height: 750px
+    background-size: 100% auto
+
+    &__navbar
+        color: #fff
+
+    &__main
+        margin: 4em 7em
+
+@media (max-width: 575.98px) 
+    .header
+        min-height: 170px
+
+        &__main
+            margin: 0
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .header
+        min-height: 335px
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .header
+        min-height: 430px
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+    .header
+        min-height: 530px
+
+.navbar
+    &__list
+        display: flex
+        flex-flow: row wrap
+        align-items: center
+        justify-content: flex-start
+        list-style-type: none
+
+    &__item
+        margin-right: 15px
+
+    &__link
+        color: #fff
+        text-decoration: none
+        font: bold .9rem/1em 'Open Sans'
+        text-transform: uppercase
+        transition: all 0.3s linear
+
+        &:hover
+            color: $col-orange  
+            text-decoration: underline
+            font-size: 1.1rem
+
+.brand
+    &__link
+        color: #fff
+        text-decoration: none
+        font: bold 1.3rem/1em 'Open Sans'
+        text-transform: uppercase
+
+        &-color
+            color: $col-orange  
+
+.account
+    &__login, &__sing
+        color: #fff
+        text-decoration: none
+        font: bold .9rem/1em 'Open Sans'
+        text-transform: uppercase
+        margin-right: 20px
+        transition: all 0.3s linear
+        word-break: keep-all
+
+        &:hover
+            font-size: 1.1rem
+            border: 2px solid #fff
+            padding: .2em .5em
+            margin-left: -15px
+
+@media (max-width: 575.98px) 
+    .account
+        &__login, &__sing
+            color: $col-orange
+            display: block
+            width: 50px
+            margin-left: -30px
+            font: bold .9rem/1.6em 'Open Sans'
+
+            &:hover
+                border: none
+                padding: 0
+                margin-left: -30px
+
+.other
+    &__btn
+        color: #fff
+        font: bold .9rem/1em 'Open Sans'
+        text-transform: uppercase
+        background: none
+        border: 2px solid #fff
+        padding: .5em .60em
+        transition: all 0.5s linear
+
+        &:hover
+            cursor: pointer
+            color: $col-orange  
+            border: 2px solid $col-orange 
+
+.header-main
+    &__title, &__subtitle
+        color: #fff
+        font: bold 3.75rem/1.2em 'Open Sans'
+        text-transform: uppercase
+        margin: 0 0 .2em 0
+
+    &__subtitle
+        color: $col-orange
+        margin: 2em 0 
+    
+    &__text
+        color: #fff
+        font: 400 0.9rem/1em 'Open Sans'
+        margin-bottom: .2em
+
+    &__btn
+        display: block
+        margin: 1.5em 0
+    
+@media (max-width: 575.98px) 
+    .header-main
+        &__title, &__subtitle
+            font-size: 2rem
+            margin-top: .5em
+
+        &__subtitle
+            color: $col-orange  
+        
+        &__text
+            font-size: 0.8rem
+        
+        &__btn
+            margin: 1.5em auto
