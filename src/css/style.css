@@ -47,7 +47,7 @@ html *, html *:before, html *:after {
 }
 
 .main {
-  background: #fff;
+  background: #f1f4f6;
 }
 
 .btn {
@@ -266,8 +266,12 @@ html *, html *:before, html *:after {
           box-shadow: 5px 0 10px #422e3e;
 }
 
+.order__wrap-img {
+  width: 600px;
+}
+
 .order__img {
-  max-width: 300px;
+  height: 100%;
 }
 
 .order__form {
@@ -305,5 +309,51 @@ html *, html *:before, html *:after {
 
 .order__btn {
   margin: 3em auto;
+}
+
+.main__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-top: 5em;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font: bold 1.6rem/1em 'Open Sans';
+  margin: 5em 0 1em 0;
+}
+
+.about__title-color {
+  color: #fa7c30;
+}
+
+.about__main {
+  min-width: 20%;
+}
+
+.about__text {
+  font: 400 .9rem/1.5em 'Open Sans';
+  text-align: justify;
+}
+
+.about__text:nth-child(2) {
+  font-weight: 700;
+}
+
+.about__btn {
+  margin-top: 4em;
+}
+
+.about__wrap-img {
+  min-width: 50%;
+}
+
+.about__img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
