@@ -303,10 +303,6 @@ html *, html *:before, html *:after {
   margin: 1em;
 }
 
-.order__input__input[type="date"]:not(:valid):before {
-  content: attr(placeholder);
-}
-
 .order__btn {
   margin: 3em auto;
 }
@@ -355,5 +351,48 @@ html *, html *:before, html *:after {
 
 .about__img {
   max-width: 100%;
+}
+
+.main__programm {
+  background: #fff;
+}
+
+.programm__title {
+  text-transform: uppercase;
+  font: bold 1.6rem/1em 'Open Sans';
+  margin: 2em 0 .5em 0;
+}
+
+.programm__title-color {
+  color: #fa7c30;
+}
+
+.programm__subtitle {
+  font: 400 .9rem/1em 'Open Sans';
+}
+
+.programm__main {
+  margin-top: 3em;
+}
+
+.programm-main__item {
+  background: #f1f4f6;
+  text-align: center;
+}
+
+.programm-main__wrap-info {
+  padding: .5em 2em 2em 2em;
+}
+
+.programm-main__title {
+  font: bold 1.2rem/1em 'Open Sans';
+}
+
+.programm-main__text {
+  font: 400 .9rem/2em 'Open Sans';
+}
+
+.programm-main__btn {
+  margin: 2em auto;
 }
 /*# sourceMappingURL=style.css.map */
