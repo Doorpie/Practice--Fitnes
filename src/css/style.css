@@ -252,7 +252,7 @@ html *, html *:before, html *:after {
   }
 }
 
-.main__order {
+.order__wrap {
   margin: -7em auto 0 auto;
   background: #fff;
   display: -webkit-box;
@@ -288,7 +288,7 @@ html *, html *:before, html *:after {
   font-size: 1.5rem;
 }
 
-.order__wrap {
+.order__main {
   margin-top: 3em;
 }
 
@@ -307,7 +307,7 @@ html *, html *:before, html *:after {
   margin: 3em auto;
 }
 
-.main__about {
+.about__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,5 +434,56 @@ html *, html *:before, html *:after {
 
 .trainer__btn {
   margin: 2em auto;
+}
+
+.main__team {
+  background: #f1f4f6;
+}
+
+.team__title {
+  text-transform: uppercase;
+  font: bold 1.6rem/1em 'Open Sans';
+  margin: 2em 0 .5em 0;
+}
+
+.team__title-color {
+  color: #fa7c30;
+}
+
+.team__subtitle {
+  font: 400 .9rem/1em 'Open Sans';
+}
+
+.team__main {
+  margin-top: 3em;
+}
+
+.team-main__item {
+  width: 300px;
+  text-align: center;
+}
+
+.team-main__wrap-img {
+  width: 300px;
+  height: 380px;
+}
+
+.team-main__wrap-info {
+  padding: .5em 0 1em 0;
+}
+
+.team-main__title {
+  font: bold 1.2rem/1em 'Open Sans';
+}
+
+.team-main__subtitle {
+  color: #fa7c30;
+  font: bold .8rem/1em 'Open Sans';
+  text-transform: uppercase;
+  margin-top: -15px;
+}
+
+.team-main__text {
+  font: 400 .9rem/2em 'Open Sans';
 }
 /*# sourceMappingURL=style.css.map */
