@@ -389,7 +389,7 @@ html *, html *:before, html *:after {
 }
 
 .programm-main__text {
-  font: 400 .9rem/2em 'Open Sans';
+  font: 400 .9rem/1.5em 'Open Sans';
 }
 
 .programm-main__btn {
@@ -484,6 +484,60 @@ html *, html *:before, html *:after {
 }
 
 .team-main__text {
-  font: 400 .9rem/2em 'Open Sans';
+  font: 400 .9rem/1.5em 'Open Sans';
+}
+
+.media__wrap {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.media__wrap-freday {
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url(../img/main_media/media-bg1.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/main_media/media-bg1.jpg) no-repeat;
+  background-size: 100% auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.media__wrap-call {
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url(../img/main_media/media-bg2.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/main_media/media-bg2.jpg) no-repeat;
+  background-size: 100% auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.media__title, .media__subtitle {
+  text-transform: uppercase;
+  font: bold 2rem/1em 'Open Sans';
+  color: #fff;
+}
+
+.media__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2em 0 .5em 0;
+}
+
+.media__title-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.media__btn {
+  margin-top: 2em;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
