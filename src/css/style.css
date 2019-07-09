@@ -487,8 +487,14 @@ html *, html *:before, html *:after {
   font: 400 .9rem/1.5em 'Open Sans';
 }
 
+.main__media {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url(../img/main_media/media-bg1.jpg) no-repeat top left, url(../img/main_media/media-bg2.jpg) no-repeat top right;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/main_media/media-bg1.jpg) no-repeat top left, url(../img/main_media/media-bg2.jpg) no-repeat top right;
+  background-size: 50% auto;
+  height: 365px;
+}
+
 .media__wrap {
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,18 +509,12 @@ html *, html *:before, html *:after {
 
 .media__wrap-freday {
   width: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url(../img/main_media/media-bg1.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/main_media/media-bg1.jpg) no-repeat;
-  background-size: 100% auto;
   padding: 2em;
   text-align: center;
 }
 
 .media__wrap-call {
   width: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url(../img/main_media/media-bg2.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/main_media/media-bg2.jpg) no-repeat;
-  background-size: 100% auto;
   padding: 2em;
   text-align: center;
 }
@@ -539,5 +539,111 @@ html *, html *:before, html *:after {
 .media__btn {
   margin-top: 2em;
   display: inline-block;
+}
+
+.footer {
+  background: #161418;
+  padding: 2em 5em;
+}
+
+.footer-about__logo {
+  color: #fff;
+  text-transform: uppercase;
+  font: bold 1.5rem/1em 'Open Sans';
+  margin-bottom: 1em;
+}
+
+.footer-about__logo-color {
+  color: #fa7c30;
+}
+
+.footer-about__text, .footer-about__social {
+  color: #908f91;
+  font: 400 .9rem/1.6em 'Open Sans';
+  text-align: justify;
+}
+
+.footer-about__social {
+  margin-top: 2em;
+}
+
+.footer-about__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+}
+
+.footer-about__email {
+  width: 20em;
+  padding: .5em;
+  font: 400 .9rem/1.3em 'Open Sans';
+  color: #908f91;
+}
+
+.footer-about__btn {
+  width: 10em;
+  padding: 1em;
+}
+
+.blogs__title {
+  font: bold 1.2rem/1em 'Open Sans';
+  text-transform: uppercase;
+  color: #908f91;
+}
+
+.blogs__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 1em;
+}
+
+.blogs__text {
+  font: 400 .9rem/1.2em 'Open Sans';
+  color: #908f91;
+  text-align: left;
+  margin-left: 2em;
+}
+
+.instagram__title {
+  font: bold 1.2rem/1em 'Open Sans';
+  text-transform: uppercase;
+  color: #908f91;
+}
+
+.instagram__wrap-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background: #000;
+  width: 260px;
+}
+
+.instagram__img {
+  margin: 1.6px;
+}
+
+.instagram__more {
+  margin-top: .5em;
+}
+
+.instagram__link {
+  text-decoration: none;
+  font: bold .9rem/1em 'Open Sans';
+  color: #908f91;
+}
+
+.instagram__link:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
