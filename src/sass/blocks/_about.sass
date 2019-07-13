@@ -1,3 +1,7 @@
+.main
+    &__about
+        background: $col-gray
+    
 .about
     &__wrap
         display: flex
@@ -31,4 +35,48 @@
     &__img
         max-width: 100%
 
+@media (max-width: 575.98px) 
+    .about
+        &__wrap
+            position: relative
+        
+        &__wrap-img
+            position: absolute
+            top: 0
+            left: 0
+            opacity: 0.1
 
+        &__img
+            max-width: 100%
+
+        &__title
+            font-size: 2rem
+            text-align: center
+            margin: 0 0 1em 0
+
+        &__text
+            font-size: 1.3rem
+
+        &__btn
+            float: right
+            margin: 0 0 2em 0
+            font-size: 1.1rem
+
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .about
+        &__title
+            font-size: 2.3rem
+
+        &__main
+            margin-top: -2em  
+
+        &__text
+            font-size: 1.3rem  
+
+        &__wrap-img
+            min-width: 0
+            max-width: 50%
+
+        &__btn
+            margin-bottom: 2em

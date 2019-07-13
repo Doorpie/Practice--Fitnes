@@ -19,15 +19,16 @@
 
 .team-main
     &__item
-        width: 300px
         text-align: center
 
     &__wrap-img
-        width: 300px
-        height: 380px
+        overflow: hidden
+
+    &__img
+        max-width: 100%
 
     &__wrap-info
-        padding: .5em 0 1em 0 
+        padding: .5em 3em 1em 3em 
 
     &__title
         font: bold 1.2rem/1em 'Open Sans' 
@@ -40,3 +41,51 @@
 
     &__text
         font: 400 .9rem/1.5em 'Open Sans' 
+
+@media (max-width: 575.98px) 
+    .team
+        &__title
+            font-size: 2rem
+            text-align: center
+
+        &__subtitle
+            font-size: 1.3rem
+            text-align: center
+
+    .team-main
+        &__subtitle
+            margin-top: -10px
+            
+        &__title
+            font-size: 2rem
+
+        &__subtitle
+            font-size: 1.4rem
+
+        &__text
+            font-size: 1.3rem
+            margin-top: -1em
+
+        &__wrap-info
+            padding: 1em
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .team
+        &__title
+            font-size: 2rem
+
+        &__subtitle
+            font-size: 1.3rem
+
+    .team-main
+        &__subtitle
+            margin-top: -10px
+            
+        &__title
+            font-size: 1.5rem
+
+        &__subtitle
+            font-size: 1.4rem
+
+        &__text
+            font-size: 1.3em

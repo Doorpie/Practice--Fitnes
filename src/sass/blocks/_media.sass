@@ -2,7 +2,30 @@
     &__media
         background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) ), url(../img/main_media/media-bg1.jpg) no-repeat top left, url(../img/main_media/media-bg2.jpg) no-repeat top right
         background-size: 50% auto
-        height: 365px
+        height: 19em
+
+@media (max-width: 575.98px) 
+    .main
+        &__media
+            height: 9em
+
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .main
+        &__media
+            height: 15em
+
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .main
+        &__media
+            height: 16em
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) 
+    .main
+        &__media
+            height: 17em
 
 .media
     &__wrap
@@ -37,3 +60,21 @@
     &__btn
         margin-top: 2em
         display: inline-block
+
+        &:hover
+        box-shadow: 0 0 50px rgb(0,0,0)
+
+@media (max-width: 575.98px) 
+    .media
+        &__wrap-call, &__wrap-freday
+            padding: 0
+
+        &__btn
+            display: none
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .media
+        &__subtitle
+            font-size: 1.2em
+        &__btn
+            margin-top: .5em

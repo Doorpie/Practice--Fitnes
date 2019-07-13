@@ -2,8 +2,15 @@
     background: $col-black
     padding: 2em 5em
 
-    // &__blogs
-    //     margin-left: 2em
+@media (max-width: 575.98px) 
+    .footer
+        padding: 1em    
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .footer
+        &__instagram
+            margin: 0 auto
+            text-align: center
         
 
 .footer-about
@@ -38,6 +45,29 @@
         width: 10em
         padding: 1em
 
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .footer-about
+        &__logo
+            font-size: 2rem
+
+        &__text, &__social
+            font-size: 1.3rem
+
+        &__email
+            margin-left: 20%
+
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .footer-about
+        &__email
+            margin-left: 25%
+
+        &__logo
+            font-size: 1.5rem
+
+        &__text, &__social
+            font-size: 1.1rem
+
 .blogs
     &__title
         font: bold 1.2rem/1em 'Open Sans'
@@ -46,30 +76,95 @@
 
     &__wrap
         display: flex
-        align-items: center
         align-content: center
-        margin-bottom: 1em
+        margin-bottom: .2em
 
     &__text
-        font: 400 .9rem/1.2em 'Open Sans'
-        color: $col-gray-footer
-        text-align: left
         margin-left: 2em
 
+    &__link
+        font: 400 .8rem/.5em 'Open Sans'
+        color: $col-gray-footer
+        text-decoration: none
+
+        &:hover
+            text-decoration: underline
+
+@media (max-width: 575.98px) 
+    .blogs
+        &__title
+            margin: 2em
+            text-align: center
+
+        &__wrap
+            margin-bottom: 2em
+
+        &__title
+            font-size: 2rem
+        
+        &__link
+            font-size: 1.1rem
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .blogs
+        &__title
+            margin-top: 2em
+            margin-bottom: 2em
+            text-align: center
+
+        &__wrap
+            margin-bottom: 2em
+
+        &__title
+            font-size: 2rem
+        
+        &__link
+            font-size: 1.1rem
+      
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .blogs
+        &__title
+            margin-top: 2em
+            margin-bottom: 2em
+            font-size: 1.5rem
+            text-align: center
+
+        &__link
+            font-size: 1rem
+            
+        &__wrap
+            margin: 1em
+
+@media (min-width: 992px) and (max-width: 1199.98px) 
+    .blogs
+        &__text
+            margin: 8px
+    
 .instagram
     &__title
         font: bold 1.2rem/1em 'Open Sans'
         text-transform: uppercase
         color: $col-gray-footer
 
-    &__wrap-img
+    &__wrap
         display: flex
         flex-flow: row wrap
         background: #000
         width: 260px
 
-    &__img
+    &__wrap-img
+        width: 83px
+        height: 84px
         margin: 1.6px
+        padding: 0
+        overflow: hidden
+
+    &__img
+        transition: all 0.2s linear
+        
+        &:hover
+            transform: scale(1.2)
 
     &__more
         margin-top: .5em
@@ -78,6 +173,66 @@
         text-decoration: none
         font: bold .9rem/1em 'Open Sans'
         color: $col-gray-footer
+        transition: all 0.3s linear
 
         &:hover
-            text-decoration: underline
+            color: #fff
+
+@media (max-width: 575.98px) 
+    .instagram
+        &__title
+            font-size: 2rem
+            text-align: center
+
+        &__wrap
+            max-width: 285px
+            margin: 0 auto
+
+        &__more
+            text-align: center
+            margin-top: 2em
+
+        &__link
+            font-size: 1.3rem
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .instagram
+        &__title
+            font-size: 2rem
+            text-align: center
+
+        &__wrap
+            width: 345px
+            margin: 0 auto
+
+        &__wrap-img:nth-child(9)
+            display: none
+
+        &__more
+            text-align: center
+            margin-top: 2em
+
+        &__link
+            font-size: 1.3rem
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .instagram
+        &__title
+            font-size: 1.5rem
+            text-align: center
+
+        &__wrap
+            width: 345px
+            margin: 0 auto
+
+        &__wrap-img:nth-child(9)
+            display: none
+
+        &__more
+            text-align: center
+            margin-top: 2em
+
+        &__link
+            font-size: 1.1rem

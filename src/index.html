@@ -20,30 +20,43 @@
     <header class="header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <nav class="navbar header__navbar">
                         <div class="row align-items-center">
-                            <div class="col-1 col-sm-1">
+                            <div class="col-4 col-sm-3 col-md-4 col-lg-1">
                                 <div class="brand navbar__brand">
                                     <a href="#" class="brand__link">Fitne<b class="brand__link-color">ss</b></a>
                                 </div>
                             </div>
-                            <div class="col-9 col-sm-6 col-lg-6">
+                            <div class="col-4 col-sm-5 col-md-4 col-lg-6 ">
                                 <ul class="navbar__list">
-                                    <li class="navbar__item"><a href="#" class="navbar__link">home</a></li>
-                                    <li class="navbar__item"><a href="#" class="navbar__link">about us</a></li>
-                                    <li class="navbar__item"><a href="#" class="navbar__link">page</a></li>
-                                    <li class="navbar__item"><a href="#" class="navbar__link">blog</a></li>
-                                    <li class="navbar__item"><a href="#" class="navbar__link">contacts</a></li>
+                                    <li class="navbar__item"><a href="#header" class="navbar__link">home</a></li>
+                                    <li class="navbar__item"><a href="#about" class="navbar__link">about us</a></li>
+                                    <li class="navbar__item"><a href="#programm" class="navbar__link">programms</a></li>
+                                    <li class="navbar__item"><a href="#trainer" class="navbar__link">trainers</a></li>
+                                    <li class="navbar__item"><a href="#order" class="navbar__link">order</a></li>
                                 </ul>
+                                <div class="burger-menu navbar__burger-menu">
+                                    <a href="#" class="burger-menu__button">
+                                        <span class="burger-menu__lines"></span>
+                                    </a>
+                                    <nav class="burger-menu__nav">
+                                        <a href="#header" class="burger-menu__link">home</a>
+                                        <a href="#about" class="burger-menu__link">about us</a>
+                                        <a href="#programm" class="burger-menu__link">programms</a>
+                                        <a href="#trainer" class="burger-menu__link">trainers</a>
+                                        <a href="#order" class="burger-menu__link">order</a>
+                                    </nav>
+                                    <div class="burger-menu__overlay"></div>
+                                </div>
                             </div>
-                            <div class="col-1 col-sm-3">
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-3">
                                 <div class="account navbar__account">
                                     <a href="#" class="account__login">login</a>
                                     <a href="#" class="account__sing">sing-up</a>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-2">
+                            <div class="col-12 col-sm col-lg-2">
                                 <div class="other navbar__other">
                                     <button class="other__btn">choose plan</button>
                                 </div>
@@ -72,48 +85,49 @@
     </header>
     <!-- /.header -->
     <main class="main">
-        <section class="order main__order">
-            <div class="container">
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10">
-                        <div class="order__wrap">
-                            <div class="order__wrap-img">
-                                <img src="./img/main_order/order-mg.jpg" alt="order" class="order__img">
-                            </div>
-                            <!-- /.order__img -->
-                            <div class="order__wrap-form">
-                                <form action="" class="order__form">
-                                    <h3 class="order__title">Free 7 days</h3>
-                                    <h2 class="order__subtitle">online booking</h2>
-                                    <div class="order__main">
-                                        <select class="order__input">
-                                            <option>1 People</option>
-                                            <option>2 People</option>
-                                            <option>3 People</option>
-                                        </select>
-                                        <input type="date" class="order__input" placeholder="Date" required>
-                                        <!-- <input placeholder="Date" class="textbox-n" type="text" onfocusin="(this.type='date')" onfocusout="(this.type='text')"  id="date">  -->
-                                        <input type="time" class="order__input" placeholder="Time">
-                                        <input type="text" class="order__input" placeholder="Name">
-                                        <input type="tel" class="order__input" placeholder="Phone">
-                                        <input type="email" class="order__input" placeholder="Email">
-                                        <button class="btn order__btn">Get in touch</button>
+            <section class="order main__order" id="order">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-12 col-md-12 col-lg-10 col-xl-10">
+                                <div class="order__wrap">
+                                    <div class="order__wrap-img">
+                                        <img src="./img/main_order/order-mg.jpg" alt="order" class="order__img">
                                     </div>
-                                </form>
-                                <!-- /.order__form -->
+                                    <!-- /.order__img -->
+                                    <div class="order__wrap-form">
+                                        <form action="" class="order__form">
+                                            <h3 class="order__title">Free 7 days</h3>
+                                            <h2 class="order__subtitle">online booking</h2>
+                                            <div class="order__main">
+                                                <select class="order__input">
+                                                    <option>1 People</option>
+                                                    <option>2 People</option>
+                                                    <option>3 People</option>
+                                                </select>
+                                                <input type="text" class="order__input" onfocus="(this.type='date')"
+                                                    placeholder="Date" required>
+                                                <input type="text" class="order__input" onfocus="(this.type='time')"
+                                                    placeholder="Time" required>
+                                                <input type="text" class="order__input" placeholder="Name" required>
+                                                <input type="tel" class="order__input" placeholder="Phone" required>
+                                                <input type="email" class="order__input" placeholder="Email" required>
+                                                <button class="btn order__btn">Get in touch</button>
+                                            </div>
+                                        </form>
+                                        <!-- /.order__form -->
+                                    </div>
+                                    <!-- /.order__form-box -->
+                                </div>
                             </div>
-                            <!-- /.order__form-box -->
+                            <!-- /.col -->
                         </div>
+                        <!-- /.row -->
                     </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
+                    <!-- /.container -->
+                </section>
         <!-- /.order main__order -->
-        <section class="about main__about">
+        <section class="about main__about" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -141,7 +155,7 @@
             <!-- /.container -->
         </section>
         <!-- /.about main__about -->
-        <section class="programm main__programm">
+        <section class="programm main__programm" id="programm">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -152,8 +166,8 @@
                             </p>
                         </div>
                         <div class="programm-main programm__main">
-                            <div class="row">
-                                <div class="col">
+                            <div class="row justify-content-center">
+                                <div class="col-9 col-md-6 col-lg-6 col-xl-3">
                                     <div class="programm-main__item">
                                         <div class="programm-main__wrap-img">
                                             <img src="./img/main_programm/programm-img1.jpg" alt="Basic Crossfit"
@@ -167,7 +181,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-9 col-md-6 col-lg-6 col-xl-3">
                                     <div class="programm-main__item">
                                         <div class="programm-main__wrap-img">
                                             <img src="./img/main_programm/programm-img2.jpg" alt="Fitness Studio"
@@ -181,7 +195,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-9 col-md-6 col-lg-6 col-xl-3">
                                     <div class="programm-main__item">
                                         <div class="programm-main__wrap-img">
                                             <img src="./img/main_programm/programm-img3.jpg" alt="Yoga Classes"
@@ -203,10 +217,10 @@
                 <!-- /.row -->
         </section>
         <!-- /.programm main__programm -->
-        <section class="trainer main__trainer">
-            <div class="container-fluid">>
+        <section class="trainer main__trainer" id="trainer">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
+                    <div class="col align-self-center">
                         <div class="trainer__wrap">
                             <h3 class="trainer__subtitle">we trained with</h3>
                             <h2 class="trainer__title">personal trainer</h2>
@@ -230,8 +244,8 @@
                             </p>
                         </div>
                         <div class="team-main team__main">
-                            <div class="row">
-                                <div class="col">
+                            <div class="row justify-content-center">
+                                <div class="col-9 col-md-6 col-lg-6 col-xl-4">
                                     <div class="team-main__item">
                                         <div class="team-main__wrap-img">
                                             <img src="./img/main_team/Sarra-img.png" alt="Sarra Miller"
@@ -245,7 +259,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-9 col-md-6 col-lg-6 col-xl-4">
                                     <div class="team-main__item">
                                         <div class="team-main__wrap-img">
                                             <img src="./img/main_team/John-D-img.png" alt="John Doe"
@@ -259,7 +273,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-9 col-md-6 col-lg-6 col-xl-4">
                                     <div class="team-main__item">
                                         <div class="team-main__wrap-img">
                                             <img src="./img/main_team/John-E-img.png" alt="John Egg"
@@ -312,11 +326,13 @@
     <!-- /.main -->
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-5">
+            <div class="row align-self-center">
+                <div class="col-12 col-md-12 col-lg-5">
                     <div class="footer-about footer__wrap-about">
                         <h2 class="footer-about__logo">fitne<b class="footer-about__logo-color">ss</b></h2>
-                        <p class="footer-about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magni, cumque numquam reiciendis, veniam voluptatum omnis corrupti exercitationem minus deserunt vel odit commodi eos itaque, veritatis a velit illum tenetur!</p>
+                        <p class="footer-about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                            magni, cumque numquam reiciendis, veniam voluptatum omnis corrupti exercitationem minus
+                            deserunt vel odit commodi eos itaque, veritatis a velit illum tenetur!</p>
                         <div class="footer-about__social">Follow Us:</div>
                         <form action="" class="footer-about__form">
                             <input type="email" class="footer-about__email" placeholder="Your Email...">
@@ -325,37 +341,62 @@
                     </div>
                 </div>
                 <!-- /.col -->
-                <div class="col-4">
+                <div class="col-12 col-md-12 col-lg-4">
                     <div class="blogs footer__blogs">
                         <h2 class="blogs__title">blogs</h2>
                         <div class="blogs__wrap">
                             <img src="./img/footer/footer-blogs1.jpg" alt="img" class="blogs__img">
-                            <p class="blogs__text">Lorem ipsum dolor sit amet,  consectetur adipiscing</p>
+                            <p class="blogs__text">
+                                <a href="#" class="blogs__link">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                            </p>
                         </div>
                         <div class="blogs__wrap">
                             <img src="./img/footer/footer-blogs2.jpg" alt="img" class="blogs__img">
-                            <p class="blogs__text">Consectetur adipiscing elit,  sed do eiusmod tempor</p>
+                            <p class="blogs__text">
+                                <a href="#" class="blogs__link">Consectetur adipiscing elit, sed do eiusmod tempor</a>
+                            </p>
                         </div>
                         <div class="blogs__wrap">
                             <img src="./img/footer/footer-blogs3.jpg" alt="img" class="blogs__img">
-                            <p class="blogs__text">sed do eiusmod tempor  incididunt ut labore</p>
+                            <p class="blogs__text">
+                                <a href="#" class="blogs__link">sed do eiusmod tempor incididunt ut labore</a>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <!-- /.col -->
-                <div class="col-3">
+                <div class="col-12 col-md-12 col-lg-3">
                     <div class="instagram footer__instagram">
                         <h2 class="instagram__title">instagram</h2>
-                        <div class="instagram__wrap-img">
-                            <img src="./img/footer/footer-instagram1.jpg" alt="instagram" class="instagram__img">
-                            <img src="./img/footer/footer-instagram2.jpg" alt="instagram" class="instagram__img">
-                            <img src="./img/footer/footer-instagram3.jpg" alt="instagram" class="instagram__img">
-                            <img src="./img/footer/footer-instagram4.jpg" alt="instagram" class="instagram__img">
-                            <img src="./img/footer/footer-instagram5.jpg" alt="instagram" class="instagram__img">
-                            <img src="./img/footer/footer-instagram6.jpg" alt="instagram" class="instagram__img">
-                            <img src="./img/footer/footer-instagram7.jpg" alt="instagram" class="instagram__img">
-                            <img src="./img/footer/footer-instagram8.jpg" alt="instagram" class="instagram__img">
-                            <img src="./img/footer/footer-instagram9.jpg" alt="instagram" class="instagram__img">
+                        <div class="instagram__wrap">
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram1.jpg" alt="instagram" class="instagram__img">
+                            </div>
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram2.jpg" alt="instagram" class="instagram__img">
+                            </div>
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram3.jpg" alt="instagram" class="instagram__img">
+                            </div>
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram4.jpg" alt="instagram" class="instagram__img">
+                            </div>
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram5.jpg" alt="instagram" class="instagram__img">
+                            </div>
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram6.jpg" alt="instagram" class="instagram__img">
+                            </div>
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram7.jpg" alt="instagram" class="instagram__img">
+                            </div>
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram8.jpg" alt="instagram" class="instagram__img">
+                            </div>
+                            <div class="instagram__wrap-img">
+                                <img src="./img/footer/footer-instagram9.jpg" alt="instagram" class="instagram__img">
+                            </div>
+
                         </div>
                         <div class="instagram__more">
                             <a href="" class="instagram__link">View more photos</a>
@@ -369,10 +410,39 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <section class="modul">
+        <div class="modul__overlay"></div>
+        <div class="popup modul__popup">
+            <!-- /.modul__overlay -->
+            <div class="popup__title">Get in touch</div>
+            <!-- /.popup__title -->
+            <div class="popup__close">&times;</div>
+            <!-- /.popup__close -->
+            <div class="popup__form-wrap">
+                <form action="#" class="popup-form popup__form">
+                    <label for="name" class="popup-form__label">Name<i class="popup-form__label-i">*</i>
+                    </label>
+                    <input type="text" class="popup-form__input" name="name" required>
+                    <label for="phone" class="popup-form__label">Phone<i class="popup-form__label-i">*</i>
+                    </label>
+                    <input type="tel" name="phone" class="popup-form__input" required>
+                    <div class="popup-form__buttons">
+                        <button class="popup-form__btn">Submit</button>
+                        <button class="popup-form__btn popup-form__btn--close">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.popup modul__popup -->
+    </section>
+    <!-- /.modul -->
 
 
+    <!-- Add jq -->
+    <script src="./js/jquery.min.js"></script>
 
-
+    <!-- Add script -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

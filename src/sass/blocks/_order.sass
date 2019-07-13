@@ -1,6 +1,10 @@
+.main
+    &__order
+        background: $col-gray
+    
 .order
     &__wrap
-        margin: -7em auto 0 auto
+        margin: -6.5em auto 0 auto
         background: #fff
         display: flex
         flex-flow: row nowrap
@@ -19,6 +23,7 @@
     &__title, &__subtitle
         text-transform: uppercase
         font: bold 1.2rem/1em 'Open Sans'
+        text-align: center
 
     &__subtitle
         font-size: 1.5rem
@@ -36,10 +41,71 @@
         padding: .5em
         margin: 1em
 
-        // &__input[type="date"]:not(:valid):before 
-        //     content: attr(placeholder)
-
     &__btn
         margin: 3em auto
+
+@media (max-width: 575.98px) 
+    .order
+        &__wrap
+            margin-top: -1em
+
+        &__wrap-form
+            margin: 0 auto
+
+        &__form
+            width: 280px
+
+        &__main
+           display: flex
+           flex-direction: column
+           margin-top: 1em
+
+        &__input
+            width: 100%
+            font-size: 1.13rem
+            margin: .5em
+
+        &__wrap-img
+            display: none
+
+        &__btn
+            margin: 3em 4em 0 4em
+            font-size: 1.1rem
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .order
+        &__form
+            max-width: 300px
+
+        &__main
+           display: flex
+           flex-direction: column
+           margin-top: 1em
+
+        &__input
+            width: 100%
+            font-size: 1.13rem
+            margin: .5em
+
+        &__wrap-img
+            width: 200px 
+            height: 325px
+
+        &__btn
+            margin-left: -27px
+
+ 
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .order
+        &__wrap-img
+            width: 200px 
+            height: 345px
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) 
+    .order
+        &__wrap-img
+            width: 300px 
+            height: 445px
 
 
